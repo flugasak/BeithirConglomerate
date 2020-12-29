@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="grid-container" id="behir-container">
+      <!-- Starting menu -->
+      <div class="hide grid-x grid-padding-x" id="behir-main-menu">
+        <div class="cell text-center">
+          <h1>Welcome to the Behir Conglomerate</h1>
+        </div>
+
+        <div class="vertical medium-horizontal menu">
+          <a id="behir-main-menu-newgame" class="button">New game</a>
+          <a id="behir-main-menu-oldgame" class="button disabled">Load game</a>
+          <a id="behir-main-menu-ships" class="button disabled">View ships</a>
+          <a id="behir-main-menu-locations" class="button disabled">View locations</a>
+        </div>
+      </div>
+
+      <!-- New Game -->
+      <div class="" id="behir-new-game-1">
+        <div class="cell text-center">
+          <h1>How many players?</h1>
+        </div>
+        <div class="slider" data-slider data-initial-start="2" data-start="1" data-end="4" data-binding="true" id="behier-newgame-player-amt">
+          <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+          <span class="slider-fill" data-slider-fill></span>
+          <input type="hidden" id="behir-player-amt">
+        </div>
+        <div class="text-center">
+          <span style="font-size: 10em;" id="behir-player-amt-display">3</span>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main_menu.js"></script>
+  </body>
+</html>
